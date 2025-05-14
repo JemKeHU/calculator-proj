@@ -1,5 +1,5 @@
 let numberOne = 2;
-let operator = "/";
+let operator = "";
 let numberTwo = 8;
 
 const add = (numOne, numTwo) => {
