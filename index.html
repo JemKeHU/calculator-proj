@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculator</title>
     <link rel="stylesheet" href="styles.css">
     <script src="main.js" defer></script>
   </head>
@@ -12,29 +12,32 @@
       <div class="input-container">
         <input id="input" type="text">
       </div>
-      <div class="sect">
+      <div id="sect-1" class="sect">
         <button id="delete" class="button delete-button">C</button>
         <button id="divide" class="button operation-button">/</button>
         <button id="multiply" class="button operation-button">*</button>
         <button id="subtract" class="button operation-button">-</button>
       </div>
-      <div class="sect">
+      <div id="sect-2" class="sect">
         <button id="number" class="button digit-button">7</button>
         <button id="number" class="button digit-button">8</button>
         <button id="number" class="button digit-button">9</button>
         <button id="add" class="button operation-button">+</button>
       </div>
-      <div class="sect">
+      <div id="sect-3" class="sect">
         <button id="number" class="button digit-button">4</button>
         <button id="number" class="button digit-button">5</button>
         <button id="number" class="button digit-button">6</button>
         <button id="display" class="button display-button">=</button>
       </div>
-      <div class="sect">
+      <div id="sect-4" class="sect">
         <button id="number" class="button digit-button">1</button>
         <button id="number" class="button digit-button">2</button>
         <button id="number" class="button digit-button">3</button>
         <button id="number" class="button digit-button">0</button>
+      </div>
+      <div id="sect-5" class="sect">
+        <button id="period" class="button operation-button">.</button><button id="backspace" class="button operation-button">backspace</button>
       </div>
     </div>
   </body>

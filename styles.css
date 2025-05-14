@@ -29,6 +29,21 @@ body {
   color: white
 }
 
+#sect-5 {
+  display: flex;
+  gap: 5px;
+}
+
+#period {
+  width: 34%;
+  height: 80px;
+}
+
+#backspace {
+  width: 64%;
+  height: 80px;
+}
+
 .display-button {
   background-color: lightgreen;
 }
@@ -68,4 +83,6 @@ body {
   background-color: darkorange;
   border: none;
   border-radius: 4px;
+  font-size: 24px;
+  padding-left: 16px;
 }
