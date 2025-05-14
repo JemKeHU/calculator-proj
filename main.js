@@ -12,11 +12,7 @@ for (const section of sections) {
         let target = e.target;
 
         if (target.tagName !== "BUTTON") return;
-        if (periodCount === 1) {
-            document.querySelector("#period").disabled = true;
-        } else {
-            document.querySelector("#period").disabled = false;
-        }
+        document.querySelector("#period").disabled = input.value.includes(".");
 
         if (target.id === "number") {
             if (calculated) {
@@ -28,12 +24,10 @@ for (const section of sections) {
             input.value += target.innerText;
         } else if (target.id === "backspace") {
             if (input.value) {
-                if (input.value[input.value.length - 1] === ".") {
+                if (input.value.at(-1) === ".") {
                     periodCount = 0
-                    input.value = input.value.slice(0, -1);
-                } else {
-                    input.value = input.value.slice(0, -1);
-                }
+                } 
+                input.value = input.value.slice(0, -1);
             }
         } else if (target.id === "period") {
             input.value += "."
